@@ -10,7 +10,7 @@ from setup_db import db
 
 @pytest.fixture()
 def genre_dao():
-    genre_dao = GenreDAO(db.session)
+    genre_dao = GenreDAO(None)
 
     g1 = Genre(id=1, name='комедия')
     g2 = Genre(id=2, name='Семейный')

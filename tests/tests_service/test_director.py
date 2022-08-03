@@ -10,7 +10,7 @@ from setup_db import db
 
 @pytest.fixture()
 def director_dao():
-    director_dao = DirectorDAO(db.session)
+    director_dao = DirectorDAO(None)
 
     d1 = Director(id=1, name='Тейлор Шеридан')
     d2 = Director(id=2, name='Квентин Тарантино')

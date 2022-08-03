@@ -10,7 +10,7 @@ from setup_db import db
 
 @pytest.fixture()
 def movie_dao():
-    movie_dao = MovieDAO(db.session)
+    movie_dao = MovieDAO(None)
 
     m1 = Movie(id=1, title='Йеллоустоун', description='Description',
                trailer='trailer', year=2018, rating=8.6, genre_id=17, director_id=1)
