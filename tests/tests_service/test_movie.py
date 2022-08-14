@@ -5,7 +5,6 @@ import pytest
 from dao.model.movie import Movie
 from dao.movie import MovieDAO
 from service.movie import MovieService
-from setup_db import db
 
 
 @pytest.fixture()

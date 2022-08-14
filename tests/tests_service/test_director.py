@@ -5,7 +5,6 @@ import pytest
 from dao.director import DirectorDAO
 from dao.model.director import Director
 from service.director import DirectorService
-from setup_db import db
 
 
 @pytest.fixture()
@@ -58,5 +57,3 @@ class TestDirectorService:
 
     def test_delete(self):
         self.director_service.delete(1)
-
-

@@ -5,7 +5,6 @@ import pytest
 from dao.genre import GenreDAO
 from dao.model.genre import Genre
 from service.genre import GenreService
-from setup_db import db
 
 
 @pytest.fixture()
@@ -33,7 +32,7 @@ class TestGenreService:
         self.genre_service = GenreService(dao=genre_dao)
 
     def test_get_one(self):
-        genre = self.genre_service.get_one(1)
+        genre = self.genre_service.get_one(2)
         assert genre is not None
         assert genre.id is not None
 
